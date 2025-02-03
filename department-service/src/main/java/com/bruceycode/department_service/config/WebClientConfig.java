@@ -31,6 +31,6 @@ public class WebClientConfig {
                 .builderFor(WebClientAdapter.create(employeeWebClient()))
                 .build();
         return httpServiceProxyFactory.createClient(EmployeeClient.class);
-        //builder(WebClientAdapter.forClient() -deprecated
+        //builder() forClient() -deprecated instead use builderFor() .create()
     }
 }
