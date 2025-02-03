@@ -41,6 +41,12 @@ public class DepartmentController {
         return repository.findById(id);
     }
 
+    @DeleteMapping("/id")
+    public Department deleteDept(@PathVariable Long id) {
+        LOGGER.info("Department find: id{}", id);
+        return repository.deleteDepartment(id);
+    }
+
     @GetMapping("/with-employees")
     public List<Department> findAllWithEmployees() {
         LOGGER.info("Department find");

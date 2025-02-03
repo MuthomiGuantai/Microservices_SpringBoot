@@ -29,4 +29,11 @@ public class DepartmentRepository {
         return departments;
     }
 
+    public Department deleteDepartment(Long id) {
+        return departments.stream()
+                .filter(department ->
+                        department.getId().equals(id))
+                .findFirst()
+                .orElseThrow();
+    }
 }
