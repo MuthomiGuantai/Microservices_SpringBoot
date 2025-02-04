@@ -35,5 +35,6 @@ public class DepartmentRepository {
                         department.getId().equals(id))
                 .findFirst()
                 .orElseThrow();
+
     }
 }
