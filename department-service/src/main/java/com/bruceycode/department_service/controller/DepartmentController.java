@@ -42,9 +42,9 @@ public class DepartmentController {
     }
 
     @DeleteMapping("/id")
-    public Department deleteDept(@PathVariable Long id) {
+    public void deleteDepartmentt(@PathVariable Long id) {
         LOGGER.info("Department find: id{}", id);
-        return repository.deleteDepartment(id);
+        repository.deleteDepartment(id);
     }
 
     @GetMapping("/with-employees")
