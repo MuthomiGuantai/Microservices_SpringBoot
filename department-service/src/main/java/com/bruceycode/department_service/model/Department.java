@@ -23,7 +23,7 @@ public class Department {
         return id;
     }
 
-    public void setI(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
